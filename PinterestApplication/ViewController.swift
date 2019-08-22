@@ -16,6 +16,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var collectionView: UICollectionView!
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.title = "Hello"
     // Do any additional setup after loading the view, typically from a nib.
   }
 
