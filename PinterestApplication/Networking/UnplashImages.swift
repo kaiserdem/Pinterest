@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+typealias Photos = [Photo]
+
+struct Photo: Codable {
+  let id: String
+  let urls: URLS
+}
+enum URLS: String, Codable {
+  case raw, full, regular, small, thumb
+}
