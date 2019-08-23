@@ -43,25 +43,20 @@
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="oud-JU-N0P">
-                                    <size key="itemSize" width="314" height="293"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
+                                <collectionViewLayout key="collectionViewLayout" id="RJZ-5A-SPe" customClass="PinterestLayout" customModule="PinterestApplication" customModuleProvider="target"/>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="twa-Pp-RsM">
-                                        <rect key="frame" x="30.5" y="0.0" width="314" height="293"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="twa-Pp-RsM" customClass="PhotoCell" customModule="PinterestApplication" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="0.0" width="365" height="318"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="314" height="293"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="318"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Ef-Dn-Idh">
                                                     <rect key="frame" x="37" y="94" width="280" height="168"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="53e-Nh-S3X">
-                                                            <rect key="frame" x="0.0" y="0.0" width="314" height="293"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="365" height="318"/>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>
@@ -73,15 +68,20 @@
                                             <constraint firstAttribute="trailing" secondItem="8Ef-Dn-Idh" secondAttribute="trailing" id="Fe1-nd-s6M"/>
                                             <constraint firstItem="8Ef-Dn-Idh" firstAttribute="leading" secondItem="twa-Pp-RsM" secondAttribute="leading" id="s6n-ug-dmy"/>
                                         </constraints>
+                                        <size key="customSize" width="365" height="318"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="imageView" destination="53e-Nh-S3X" id="kjd-88-hAD"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="8Eh-yg-321"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wCL-09-utG"/>
                                 </connections>
                             </collectionView>
                         </subviews>
