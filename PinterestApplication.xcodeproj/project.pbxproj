@@ -68,22 +68,29 @@
 		AD8E3760230F125C00F10DF8 /* PinterestApplication */ = {
 			isa = PBXGroup;
 			children = (
+				AD8E3761230F125C00F10DF8 /* AppDelegate.swift */,
 				ADE97D6C2310322900242BAF /* ViewModels */,
 				ADE97D63230FFC9900242BAF /* Networking */,
 				ADE97D5E230FF3BD00242BAF /* Views */,
-				AD8E3761230F125C00F10DF8 /* AppDelegate.swift */,
-				AD8E3763230F125C00F10DF8 /* ViewController.swift */,
-				AD8E3765230F125C00F10DF8 /* Main.storyboard */,
-				AD8E3768230F125D00F10DF8 /* Assets.xcassets */,
-				AD8E376A230F125D00F10DF8 /* LaunchScreen.storyboard */,
+				ADA12EEF2311732100E9CE77 /* Resourses */,
 				AD8E376D230F125D00F10DF8 /* Info.plist */,
 			);
 			path = PinterestApplication;
 			sourceTree = "<group>";
 		};
+		ADA12EEF2311732100E9CE77 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				AD8E376A230F125D00F10DF8 /* LaunchScreen.storyboard */,
+				AD8E3768230F125D00F10DF8 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
 		ADE97D5E230FF3BD00242BAF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD8E3765230F125C00F10DF8 /* Main.storyboard */,
 				ADE97D5F230FF3F200242BAF /* PhotoCell.swift */,
 				ADE97D61230FF80B00242BAF /* PinterestLayout.swift */,
 			);
@@ -104,6 +111,7 @@
 		ADE97D6C2310322900242BAF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AD8E3763230F125C00F10DF8 /* ViewController.swift */,
 				ADE97D6D231032F100242BAF /* ViewModel.swift */,
 			);
 			path = ViewModels;
