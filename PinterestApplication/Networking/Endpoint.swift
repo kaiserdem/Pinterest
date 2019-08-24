@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol EndPoint {
+protocol Endpoint {
   var baseUrl: String { get }
   var path: String { get }
   var urlParameters: [URLQueryItem] { get }
 }
-extension EndPoint {
+extension Endpoint {
   var urlComponent: URLComponents {
     var urlComponent = URLComponents(string: baseUrl)
     urlComponent?.path = path
@@ -30,11 +30,12 @@ enum Order: String {
   case latest, oldest, popular
 }
 
-enum UnspashEndpoint: EndPoint {
+enum UnspashEndpoint: Endpoint {
   case photos(id: String, order: Order)
   
   var baseUrl: String {
-    return "http://api.unsplash.com"
+    return UnsplashClient.baseUrl
+    //return "http://api.unsplash.com"
   }
   
   var path: String {

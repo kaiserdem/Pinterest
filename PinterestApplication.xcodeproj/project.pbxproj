@@ -18,6 +18,7 @@
 		ADE97D6723100EB700242BAF /* UnplashImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE97D6623100EB700242BAF /* UnplashImages.swift */; };
 		ADE97D692310225700242BAF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE97D682310225700242BAF /* Endpoint.swift */; };
 		ADE97D6B23102D8D00242BAF /* UnsplashClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE97D6A23102D8D00242BAF /* UnsplashClient.swift */; };
+		ADE97D6E231032F100242BAF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE97D6D231032F100242BAF /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		ADE97D6623100EB700242BAF /* UnplashImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnplashImages.swift; sourceTree = "<group>"; };
 		ADE97D682310225700242BAF /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		ADE97D6A23102D8D00242BAF /* UnsplashClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashClient.swift; sourceTree = "<group>"; };
+		ADE97D6D231032F100242BAF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		AD8E3760230F125C00F10DF8 /* PinterestApplication */ = {
 			isa = PBXGroup;
 			children = (
+				ADE97D6C2310322900242BAF /* ViewModels */,
 				ADE97D63230FFC9900242BAF /* Networking */,
 				ADE97D5E230FF3BD00242BAF /* Views */,
 				AD8E3761230F125C00F10DF8 /* AppDelegate.swift */,
@@ -96,6 +99,14 @@
 				ADE97D6A23102D8D00242BAF /* UnsplashClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		ADE97D6C2310322900242BAF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ADE97D6D231032F100242BAF /* ViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE97D692310225700242BAF /* Endpoint.swift in Sources */,
+				ADE97D6E231032F100242BAF /* ViewModel.swift in Sources */,
 				ADE97D62230FF80B00242BAF /* PinterestLayout.swift in Sources */,
 				ADE97D6723100EB700242BAF /* UnplashImages.swift in Sources */,
 				AD8E3764230F125C00F10DF8 /* ViewController.swift in Sources */,
